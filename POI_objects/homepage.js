@@ -8,6 +8,7 @@ class Homepage{
         //this.additem1="(//button[text()='Add to cart'])[1]"
         this.additem2="(//button[text()='Add to cart'])"
         this.cartitems="[data-test ='shopping-cart-link']"
+        console.log('changed by vighnesh')
     }
 
     async selectingitems(){
