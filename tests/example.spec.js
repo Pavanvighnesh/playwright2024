@@ -11,7 +11,8 @@ test('has title', async () => {
   // Expect a title "to contain" a substring.
   
   // @ts-ignore
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect.soft(page).toHaveTitle(/Playwright/);
+  console.log('soft assertion')
 });
 
 test('get started link', async ({ page }) => {

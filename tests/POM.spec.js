@@ -1,6 +1,6 @@
-import {Login} from '../POI objects/login'
+import { Login } from '../POI_objects/login';
 import {test} from '@playwright/test' 
-import { Homepage } from '../POI objects/homepage';
+import { Homepage } from '../POI_objects/homepage';
 
 test('login',async({page})=>{
 

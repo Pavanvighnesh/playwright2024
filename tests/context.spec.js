@@ -26,10 +26,14 @@ test.only('omayo',async({page})=>{
     
 
     await page.goto('https://omayo.blogspot.com/')
+    
     const dropdown=await page.locator('.combobox')
-    await page.pause()
+    
+    //await page.pause()
     await dropdown.selectOption('doc 4')
+    await page.waitForTimeout(3000)
     await dropdown.selectOption('doc 3')
+    await page.waitForTimeout(3000)
 
 
 
